@@ -5,10 +5,10 @@
 # Site
 title: Alex-Li-Blog
 subtitle: 'Some notes about front-end.'
-description: 'front end, front, end, back-end, computer, website, algorithm'
-keywords:
+description: 'This is my blog about front-end skills.'
+keywords: 'front end, front, end, back-end, computer, website, algorithm'
 author: Alex Li
-language: en
+language: default
 timezone: 'Pacific/Auckland'
 
 # URL

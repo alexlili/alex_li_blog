@@ -14,6 +14,19 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-bookmark
+    children:
+    - name: Front-End
+      url: /categories/front-end
+      icon: fa-solid fa-display
+    - name: Back-End
+      url: /categories/back-end
+      icon: fa-solid fa-server
+    - name: Algorithm
+      url: /categories/algorithm
+      icon: fa-solid fa-diagram-project
+    - name: Other
+      url: /categories/other
+      icon: fa-solid fa-book
   # Friends:
   #   url: /friends
 #   更多: # 这是二级菜单的写法
@@ -59,14 +72,14 @@ sidebar:
       background: '#fff'
       order:  # 卡片排序, 数值越小，越在上面
       social:
-        - icon: fas fa-rss
-          url: /atom.xml
+        - icon: fab fa-linkedin-in
+          url: https://www.linkedin.com/in/alex-li-8866b3298/
         - icon: fas fa-envelope
-          url: mailto:me@xxx.com
+          url: mailto:liguangyao365@gmail.com
         - icon: fab fa-github
-          url: https://github.com/yuang01/hexo-theme-bamboo
-        - icon: fab fa-qq
-          url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=你的qq号码
+          url: https://github.com/alexlili
+        - icon: fas fa-user-secret
+          url: https://alex-li-life.netlify.com
     # ---------------------------------------
     side_toc:
       on: true
@@ -174,7 +187,7 @@ sidebar:
 # 页面刷新时预加载动画
 preloader:
   on: true
-  type: 2 # 1/2/3/4/5/6/7/8/9
+  type: 9 # 1/2/3/4/5/6/7/8/9
 
 # 首页轮播图设置
 swiper:
@@ -192,17 +205,17 @@ swiper:
   readMoreBtn: true # 阅读更多按钮是否显示
   readMoreBtnBackgroundColor: '' # 阅读更多按钮背景颜色,空字符串则默认使用主题颜色
   bubble: true # 轮播图是否显示气泡,也可以打开底下的花瓣或者雪花特效 sakura（花瓣）: true snow(雪花): true
-  wave: false # 轮播图底下的波浪特效
+  wave: true # 轮播图底下的波浪特效
   # 当没有文章设置swiper: true时候，轮播图会显示以下default默认内容，可自行切换对应内容
   defaultImg: '/medias/kaikoura.jpg' # 图片，没有则随机选取
   defaultVideo: '' # video，min-width:992px show
   defaultVideoLoadingImg: 'https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif' # video loading img -- use .gif img, 视频预加载动画，使用gif图片作为loading，为空则视频没有预加载动画
   defaultTile: 'Live your life the way you like.' # 标题
   defaultDesc: ['This background pic was taken when I travelled to KAIKOURA.'] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
-  defaultLeftBtnText: 'My GitHub' # 左边按钮文字, 空字符串则不显示
+  defaultLeftBtnText: 'GitHub' # 左边按钮文字, 空字符串则不显示
   defaultLeftBtnLink: 'https://github.com/alexlili' # 左边按钮链接 
-  defaultRightBtnText: 'About Me' # 右边按钮的文字，空字符串则不显示
-  defaultRightBtnLink: 'https://kaomimeibi.000webhostapp.com/' # 右边的按钮的链接
+  defaultRightBtnText: 'LinkedIn' # 右边按钮的文字，空字符串则不显示
+  defaultRightBtnLink: 'https://www.linkedin.com/in/alex-li-8866b3298/' # 右边的按钮的链接
   defaultDescTyped: true # defaultDesc文字是否开启打字特效  is typed
   defaultDescTypedSpeed: 100 # defaultDesc 打字速度, typed typeSpeed
   defaultDescTypedBackSpeed: 50 # defaultDesc 打字返回速度 typed backSpeed
@@ -239,7 +252,7 @@ show_count: true
 
 # 打赏功能
 donate:
-  on: true
+  on: false
 donate_message: 你的赏识是我前进的动力
 # 支付宝打赏图片相对路径
 Alipay: 'https://pica.zhimg.com/80/v2-61f99f8dcf899f54cad2a1aa28b21e44_1440w.webp'
@@ -465,7 +478,7 @@ gitalk:
 utterance:
   on: true
   # 仓库名字，格式：你的用户 ID/ 仓库名称，如：yuang01/yuang01.github.io
-  repo: 
+  repo: alexlili/alex_li_blog
   # 主题
   theme:
     light: github-light
@@ -511,7 +524,7 @@ archive:
   title: 'archive'
   img: 'medias/christchurch.jpg'
   desc: 'This picture was taken when I was in Christchurch.'
-  full: true # 设置为true，则图片全屏显示
+  full: false # 设置为true，则图片全屏显示
   video: '' # 如果有值，则在屏幕大于920px的时候，全屏显示视频，为空则显示图片(img)
   background: '' # red or rgba(255,255,255,0.8) or other color or url("http:xxx.png")
   yearColor: '' # 年份字体颜色
