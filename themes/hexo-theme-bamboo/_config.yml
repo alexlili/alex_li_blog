@@ -1,5 +1,5 @@
 # 配置里面 线上地址写法：http://xxx，本地地址。可以在`source`文件夹下创建目录，假如创建img和videos目录，则引用的时候使用 /img/xxx 写法, /videos/xxx  ... 
-language: en
+language: default
 # 菜单
 menu:
   Home:
@@ -27,6 +27,9 @@ menu:
     - name: Other
       url: /categories/other
       icon: fa-solid fa-book
+  # About:
+  #   url: /me
+  #   icon: fas fa-link
   # Friends:
   #   url: /friends
 #   更多: # 这是二级菜单的写法
@@ -88,7 +91,7 @@ sidebar:
       header:
         icon: fas fa-list
         icon_color: # 标题字体颜色
-        title: 本文目录
+        title: Content
       before: number # number为序号，可以是自定义表情字符
       heading: h2, h3, h4 # h2,3,4标题会在目录显示，可以加上 ,h5则h5标题也会显示在目录里
       collapseDepth: 20 # 折叠深度, 0则会折叠，0-6即可, 20相当于不折叠
@@ -101,7 +104,7 @@ sidebar:
       header:
         icon: fas fa-folder-open
         icon_color: # 标题字体颜色
-        title: 文章分类
+        title: Article Categories
         url: /blog/categories/
     # ---------------------------------------
     # tagcloud widget
@@ -112,7 +115,7 @@ sidebar:
       header:
         icon: fas fa-tags
         icon_color: 
-        title: 热门标签
+        title: Article Tags
         url: /tags/
       min_font: 14
       max_font: 24
@@ -158,26 +161,27 @@ sidebar:
         article:
           on: true
           text: 'Article Count：'
-          # unit: '篇'
+          unit: 'pieces'
         runtime:
-          on: false
+          on: true
           data: '2017/01/01'    # 填写建站日期
-          text: '已运行时间：'
-          unit: '天'
+          text: 'Runtime：'
+          unit: 'days'
         wordcount:
           on: true
-          text: '本站总字数：'   # 需要启用 wordcount
-          unit: '字'
+          text: 'Total Words：'   # 需要启用 wordcount
+          unit: 'words'
         visitcounter:
           service: busuanzi # only busuanzi
           siteuv:
-            on: false
-            text: '本站访客数：'
-            unit: '人'
+            on: true
+            # text: 'Unique Vistor：'
+            text: 'UV:'
+            unit: 'people'
           sitepv:
-            on: false
-            text: '本站总访问量：'
-            unit: '次'
+            on: true
+            text: 'PV:'
+            unit: 'times'
         lastupd:
           on: false
           friendlyShow: true    # 更友好的时间显示
@@ -271,7 +275,7 @@ cursor_effect:
 
 # 头部导航是否显示天气
 weather:
-  on: true
+  on: false
 
 # 全文搜索功能
 search:
@@ -717,7 +721,7 @@ highlight:
 
 # wordcount字数统计, 需要 npm i hexo-wordcount 安装
 wordcount:
-  on: false
+  on: true
 
 # 自己嵌入css或者script
 import:

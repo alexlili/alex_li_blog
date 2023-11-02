@@ -13,7 +13,7 @@ timezone: 'Pacific/Auckland'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://alex-li-blog.netlify.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -105,3 +105,9 @@ deploy:
   type: git
   repository: git@github.com:alexlili/alex_li_life.git
   branch: master
+
+hexo_pro:
+  username: liguangyao
+  password: lanyeming
+  avatar: https://gravatar.com/liguangyao365543335066e
+  secret: lanyeming@1314
