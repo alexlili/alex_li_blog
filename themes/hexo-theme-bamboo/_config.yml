@@ -265,8 +265,9 @@ WeChatpay: 'https://pic2.zhimg.com/80/v2-29e78b52051ce542adf6d786d61fbd19_1440w.
 
 # 分享功能
 sharejs: 
-  on: false
-  sites: twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin
+  on: true
+  sites: twitter,facebook,google,linkedin
+  # sites: twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin
 
 # 鼠标点击特效
 cursor_effect:
@@ -280,6 +281,9 @@ weather:
 # 全文搜索功能
 search:
   on: true
+
+local_search:
+  enable: true
 
 # 文章详情页底部显示上一篇文章和下一篇文章
 postNav:
@@ -318,7 +322,7 @@ sakura:
 # 首页文章图片是否一左一右交错显示
 homePostImgsPosition:
   on: true
-  left: true # 当上面的on设置为false（不交叉显示），则指定left为true的时候，图片在左边显示
+  left: false # 当上面的on设置为false（不交叉显示），则指定left为true的时候，图片在左边显示
 
 # 灯笼
 lantern:
@@ -339,8 +343,8 @@ scrollreveal:
 
 # 添加 Google Analytics 配置
 googleAnalytics:
-  on: false
-  id:
+  on: true
+  id: G-CXQQ525BFP
 
 # 添加 baidu Analytics 配置
 baiduAnalytics:
@@ -348,7 +352,7 @@ baiduAnalytics:
   id:
 
 # 百度搜索资源平台提交链接
-baiduPush: true
+baiduPush: false
 
 
 # 音乐

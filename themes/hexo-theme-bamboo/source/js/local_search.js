@@ -134,8 +134,8 @@ var searchFunc = function (path, search_id, content_id) {
         str += "</ul>";
         if (str.indexOf("<li>") === -1) {
           return ($resultContent.innerHTML =
-            "<ul><span class='local-search-empty'>没有找到内容，请尝试更换检索词。<span></ul>");
-          // return $resultContent.innerHTML = BTN + "<ul><span class='local-search-empty'>没有找到内容，请尝试更换检索词。<span></ul>";
+            "<ul><span class='local-search-empty'>No content found, please try to change the search term.<span></ul>");
+          // return $resultContent.innerHTML = BTN + "<ul><span class='local-search-empty'>No content found, please try to change the search term.<span></ul>";
         }
         $resultContent.innerHTML = str;
         window.pjax && window.pjax.refresh($resultContent)
