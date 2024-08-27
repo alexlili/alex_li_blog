@@ -15,11 +15,11 @@ menu:
     url: /categories
     icon: fas fa-bookmark
     children:
-    - name: Front-End
-      url: /categories/front-end
+    - name: FrontEnd
+      url: /categories/frontend
       icon: fa-solid fa-display
-    - name: Back-End
-      url: /categories/back-end
+    - name: BackEnd
+      url: /categories/backend
       icon: fa-solid fa-server
     - name: Algorithm
       url: /categories/algorithm

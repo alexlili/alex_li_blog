@@ -1,7 +1,9 @@
 title: 'Intro Pointers and Their Role:'
 author: Alex Li
+tags: []
+categories:
+  - backend
 date: 2023-11-27 00:33:50
-tags:
 ---
 #### Introduction to Pointers and Their Role:
 a. Declare a pointer variable to an integer named ptr.

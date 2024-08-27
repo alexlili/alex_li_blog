@@ -3,5 +3,5 @@ settings:
   navbar: true
   menu: true
   footer: true
-  themeColor: "#d0021b"
+  themeColor: "#03c295"
   menuWidth: 220

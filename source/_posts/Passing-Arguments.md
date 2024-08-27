@@ -1,7 +1,10 @@
 title: Passing Arguments
 author: Alex Li
+tags: []
+categories:
+  - frontend
+  - backend
 date: 2023-11-27 00:50:12
-tags:
 ---
 #### Passing Arguments (By Value, By Reference):
 a. Write a function incrementByValue that takes an integer parameter and increments it by 1. Call the function and observe the changes.
