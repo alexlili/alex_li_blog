@@ -183,10 +183,10 @@ sidebar:
             text: 'PV:'
             unit: 'times'
         lastupd:
-          on: false
+          on: true
           friendlyShow: true    # 更友好的时间显示
-          text: '最后活动时间：'
-          unit: '日'
+          text: 'Last update：'
+          unit: 'days'
 
 # 页面刷新时预加载动画
 preloader:
@@ -276,7 +276,7 @@ cursor_effect:
 
 # 头部导航是否显示天气
 weather:
-  on: false
+  on: true
 
 # 全文搜索功能
 search:
@@ -344,7 +344,7 @@ scrollreveal:
 # 添加 Google Analytics 配置
 googleAnalytics:
   on: true
-  id: G-CXQQ525BFP
+  id: GTM-MTMKNL9T
 
 # 添加 baidu Analytics 配置
 baiduAnalytics:
@@ -641,7 +641,7 @@ site_footer:
     #   url: https://github.com/yuang01/hexo-theme-bamboo
     # - icon: fas fa-qq
     #   url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541
-  copyright: 'Copyright © 2017 - 2023 <a href="https://github.com/alexlili">alexlili</a> | Powered by <a href="https://hexo.io/zh-cn/docs/">Hexo</a>'
+  copyright: 'Copyright © 2017 - 2024 <a href="https://github.com/alexlili">alexlili</a> | Powered by <a href="https://hexo.io/zh-cn/docs/">Hexo</a>'
   custom: # 根据需要自行取消注释，label: 'markdown格式'，会在下面继续增加内容
     # - label: '<br>'
     # - label: '[Hello World](http://baidu.com)'
@@ -735,7 +735,7 @@ import:
     - 
   script: 
     # - <script src="xxx.js"></script>
-    - 
+    # - <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTMKNL9T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     - 
 
 # 文章图片,不指定 img:xxx 的时候随机取下面的图片
