@@ -141,6 +141,11 @@ basic-auth@~2.0.1:
   dependencies:
     safe-buffer "5.1.2"
 
+bcrypt-nodejs@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/bcrypt-nodejs/-/bcrypt-nodejs-0.0.3.tgz#c60917f26dc235661566c681061c303c2b28842b"
+  integrity sha512-NmTbLm867btBHCBZ222FQXkQKzecB0KG6pTXFa6NeTVZaSnLfCsx7EK2PL3J+kX8xJThUquEBbhimRCKKZX9zA==
+
 binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz"
@@ -908,14 +913,17 @@ hexo-pagination@3.0.0:
   resolved "https://registry.npmjs.org/hexo-pagination/-/hexo-pagination-3.0.0.tgz"
   integrity sha512-8oo1iozloZo7TojPVYg4IxL3SJKCBdSJ908fTlIxIK7TWJIKdYnQlW31+12DBJ0NhVZA/lZisPObGF08wT8fKw==
 
-hexo-pro@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.npmjs.org/hexo-pro/-/hexo-pro-1.0.8.tgz"
-  integrity sha512-x+1Wl1e9ZSxBTFuC090aKZT2cKS5JABjBO6IGoi/H9E5eCkT8ajedgMS2CQ5eiSIEW6K8Mx1iggyNP+MsrDCTw==
+hexo-pro@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/hexo-pro/-/hexo-pro-1.0.12.tgz#0a4d3d9dcb8895658c2ba8ecf92e7565b769e786"
+  integrity sha512-YW3OIel+qozXOKAp4TE60ZiyMR98ARGN6/zYhMHPRk4d/trP44EsWVEqDJeBs+vzlTRFcZF9cf0zKCdwrFyMhQ==
   dependencies:
+    bcrypt-nodejs "^0.0.3"
+    body-parser "^1.20.2"
     circular-json "^0.5.9"
     connect-history-api-fallback "^2.0.0"
     express-jwt "^8.4.1"
+    extend "^3.0.2"
     flatted "^3.2.7"
     hexo-front-matter "^4.1.0"
     hexo-fs "^4.1.1"
